@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <!--[if IE]>
+        <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="box">
+    <!-- nav -->
+        <nav>
+            <div class="top">
+                <a href="html/index.html"></a>
+                <div class="dropdown">产品中心</div>
+            </div>   
+        </nav>
+        <div class="topDown">
+            <div class="top_do">
+               <div class="drop_down">
+                   <ul>
+                       <li><a href="#">电子签章</a></li>
+                       <li><a href="#">手机盾</a></li>
+                       <li><a href="#">一体机终端</a></li>
+                       <li><a href="#">手写板</a></li>
+                   </ul>
+               </div> 
+            </div>
+        </div>
+    <!-- title_scroll -->
+        <div class="title">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/background.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/background.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/background.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    <!-- center -->
+        <div class="center">
+        <!-- left -->
+            <div class="left">
+                <p>产品中心</p>
+                <ul>
+                    <li class="select">电子签章</li>
+                    <li>手机盾</li>
+                    <li>一体机终端</li>
+                    <li>手写板</li>
+                </ul>
+            </div>
+        <!-- right -->
+            <!--Electronic Signature  -->
+            <div class="right" id="right_block">
+                <ul class="signature">
+                    <li class="select_sign">Ukey签章</li>
+                    <li>扫码签章</li>
+                    <li>后台批签</li>
+                </ul>
+                <!-- UKey signature -->
+                <section class="drop drop1" id="uk">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <!-- default -->
+                    <!-- 电子签章——UK签章——产品使用流程 -->
+                    <div class="inner show1"> 
+                        <div class="back"></div>
+                        <p class="inn1">Ukey签章</p>
+                        <p class="inn2">安装慧签<br>章PDF签章<br>阅读器</p>
+                        <p class="inn3">下载信安<br>CA证书小<br>精灵</p>
+                        <p class="inn4">插入Ukey</p>
+                        <p class="inn5">使用慧签通<br>签章</p>
+                        <p class="inn6">签章完成</p>
+                        <p class="inn7">1.打开慧签通客户端<br>2.数字签名、输入pin码<br>3.在待签文件上签章</p>
+                        <div class="back1"></div>
+                    </div>
+                    <!-- 电子签章——UK签章——产品体验-->
+                    <div class="inner show2">2</div>
+               </section>
+                <!--Scavenging signature -->
+                <section class="drop drop2">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <!--电子签章——-扫码签章——产品流程  -->
+                    <div class="inner show1 scaveng"> 
+                        <p class="inn1">扫码签章</p>
+                        <p class="inn2">安装并登陆<br>手机盾APP</p>
+                        <p class="inn3">扫码签章</p>
+                        <p class="inn4">签章完成</p>
+                        <p class="inn5">1.使用手机盾扫二维码<br>2.选中签章图片<br>3.在待签文件上签章</p>
+                    </div>
+                    <!-- 电子签章——扫码签章——产品体验-->
+                    <div class="inner show2">
+                        <button id="dddddd">eeeeeeeee</button>
+                        <!-- <div id="qr_code_alert">
+                            <div class="weixin">扫一扫二维码完成文件签名/盖章</div>
+                            <p>操作提示：打开手机盾>>登陆手机盾>>点击扫一扫</p>
+                        </div> -->
+                    </div>
+               </section>
+                <!-- 后台批签 -->
+               <section class="drop drop3">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <div class="inner show1"> 
+                        <p class="inn1">扫码签章</p>
+                        <p class="inn2">选中需要签<br>章的文件</p>
+                        <p class="inn3">签章请求</p>
+                        <p class="inn4">签章完成</p>
+                    </div>
+                    <!-- 电子签章——后台批签——产品体验-->
+                    <div class="inner show2">
+                        <div class="drop_span">
+                            <span class="proxy_signature">待签文字</span>
+                            <span>签章完成</span>
+                        </div>
+                        <div id="proxy_show">
+                            <ul id="proxyShowUl1">
+                                <li class="proxy_sel">这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li class="proxy_sel">这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li>这里是pdf文件名称</li>
+                                <li style="width:300px;">这里是pdf文件名称</li>
+                            </ul>
+                            <div class="wh_p">
+                                <span class="whole">全选</span>
+                                <span class="backstage" id="backstage">后台签章</span>
+                            </div>
+                            <div class="page1" style="width:600px;height:100px;margin:60px auto 0;"></div> 
+                        </div>
+                        <div id="proxy_success">
+                                <ul>
+                                    <li>
+                                        <span>这里是pdf文件名称这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                    <li>
+                                        <span>这里是pdf文件名称</span>
+                                        <span class="updown">下载</span>
+                                        <span class="delete">删除</span>
+                                    </li>
+                                </ul>
+                                <div class="page2" style="width:600px;height:100px;margin:60px auto 0;"></div> 
+                            </div>
+                    </div>
+               </section>
+            </div>
+            <!--mobile_shield -->
+            <div class="right mobile_shield">
+                <ul class="signature">
+                    <li class="select_sign">PC软盾</li>
+                    <li>手机盾</li>
+                </ul>
+                <!--PC -->
+                <section class="mobile drop4" id="phone">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <!-- default -->
+                    <!--mobile_shield——产品使用流程 -->
+                    <div class="inner show1"> 
+                        <p class="inn1">手机盾</p>
+                        <p class="inn2">下载并安<br>装PC软盾<br>客户端</p>
+                        <p class="inn3">注册并登<br>陆软盾</p>
+                        <p class="inn4">使用软盾<br>下证</p>
+                        <p class="inn5">证书查看</p>
+                        <p class="inn6">1.输入下证ID<br>2.登陆手机页面<br>3.成功下载证书章</p>
+                    </div>
+                    <!--mobile_shield——产品体验-->
+                    <div class="inner show2">手机盾,PC软盾,产品体验</div>
+                </section>
+                <!-- phone -->
+               <section class="mobile drop5">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <!-- default -->
+                    <!--mobile_shield——产品使用流程 -->
+                    <div class="inner show1"> 
+                        <p class="inn1">手机盾</p>
+                        <p class="inn2">安装并登<br>陆手机<br>盾APP</p>
+                        <p class="inn3">个人实名<br>认证</p>
+                        <p class="inn4">添加手写<br>签名图片</p>
+                        <p class="inn5">添加手写<br>签名图片</p>
+                        <p class="inn6">上传身份证图片</p>
+                        <p class="inn7">1.使用手机盾扫描二维码<br>2.选中签章图片<br>3.在待签文件上签章</p>
+                    </div>
+                    <!--mobile_shield——产品体验-->
+                    <div class="inner show2">请登录中远软盾客，体验证书下载。</div>
+               </section>
+            </div>
+            <!--Integrated machine  -->
+            <div class="right int_mac">
+                <div class="int_title"><p>一体机终端</p></div>
+                <section class="int_machine drop6">
+                    <div class="uk_signature">
+                        <span class="uk1 shows">产品使用流程</span>
+                        <span class="uk2">产品体验</span>
+                    </div>
+                    <!-- default -->
+                    <!--int_machine——产品使用流程 -->
+                    <div class="inner show1"> 
+                        <p class="inn1">一体机终端</p>
+                        <p class="inn2">扫描身份证</p>
+                        <p class="inn3">扫描人脸</p>
+                        <p class="inn4">对比成功</p>
+                    </div>
+                    <!--int_machine——产品体验-->
+                    <div class="inner show2">请登录中远软盾客，体验证书下载。</div>
+                </section>
+            </div>
+            <!--Handwriting board  -->
+            <div class="right">手写板</div>
+        </div>
+        
+    </div>
+    <div id="qr_code_alert">
+        <div class="weixin">扫一扫二维码完成文件签名/盖章</div>
+        <p>操作提示：打开手机盾>>登陆手机盾>>点击扫一扫</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.page.js"></script>
+<script type="text/javascript" src="js/jq.hDialog.js"></script>
+
+</html>
